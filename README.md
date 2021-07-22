@@ -1,3 +1,3 @@
-# Capslock 功能加强 AHK 脚本
+# AutoHotkeyScript Library
 
 TODO
