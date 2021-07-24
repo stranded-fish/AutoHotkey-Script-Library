@@ -21,17 +21,15 @@ CapsLock & `::
     KeyWait, ``
 return
 
-; 方向键
+; 方向键（Ctrl、Shift 兼容）
 CapsLock & j::
-    if GetKeyState("control") = 0
-    {
+    if GetKeyState("control") = 0 {
         if GetKeyState("shift") = 0
             Send, {Left}
         else
             Send, +{Left}
         return
-    }
-    else {
+    } else {
         if GetKeyState("shift") = 0
             Send, ^{Left}
         else
@@ -41,15 +39,13 @@ CapsLock & j::
 return
 
 CapsLock & k::
-    if GetKeyState("control") = 0
-    {
+    if GetKeyState("control") = 0 {
         if GetKeyState("shift") = 0
             Send, {Down}
         else
             Send, +{Down}
         return
-    }
-    else {
+    } else {
         if GetKeyState("shift") = 0
             Send, ^{Down}
         else
@@ -59,15 +55,13 @@ CapsLock & k::
 return
 
 CapsLock & i::
-    if GetKeyState("control") = 0
-    {
+    if GetKeyState("control") = 0 {
         if GetKeyState("shift") = 0
             Send, {Up}  
         else
             Send, +{Up} 
         return
-    }
-    else {
+    } else {
         if GetKeyState("shift") = 0
             Send, ^{Up} 
         else
@@ -77,15 +71,13 @@ CapsLock & i::
 return
 
 CapsLock & l::
-    if GetKeyState("control") = 0
-    {
+    if GetKeyState("control") = 0 {
         if GetKeyState("shift") = 0
             Send, {Right}
         else
             Send, +{Right}
         return
-    }
-    else {
+    } else {
         if GetKeyState("shift") = 0
             Send, ^{Right}
         else
@@ -95,17 +87,15 @@ CapsLock & l::
 return
 
 
-; Home/End
+; Home/End（Ctrl、Shift 兼容）
 CapsLock & p::
-    if GetKeyState("control") = 0
-    {
+    if GetKeyState("control") = 0 {
         if GetKeyState("shift") = 0
             Send, {Home}
         else
             Send, +{Home}
         return
-    }
-    else {
+    } else {
         if GetKeyState("shift") = 0
             Send, ^{Home}
         else
@@ -115,15 +105,13 @@ CapsLock & p::
 return
 
 CapsLock & `;::
-    if GetKeyState("control") = 0
-    {
+    if GetKeyState("control") = 0 {
         if GetKeyState("shift") = 0
             Send, {End} 
         else
             Send, +{End}
         return
-    }
-    else {
+    } else {
         if GetKeyState("shift") = 0
             Send, ^{End}
         else
@@ -133,39 +121,17 @@ CapsLock & `;::
 return
 
 
-; PageUp/PageDown
+; PageUp/PageDown（Shift 兼容）
 CapsLock & u::
-    if GetKeyState("control") = 0
-    {
-        if GetKeyState("alt") = 0
-            Send, {PgUp}
-        else
-            Send, +{PgUp}
-        return
-    }
-    else {
-        if GetKeyState("alt") = 0
-            Send, ^{PgUp}
-        else
-            Send, +^{PgUp}
-        return
-    }
+    if GetKeyState("shift") = 0
+        Send, {PgUp}
+    else
+        Send, +{PgUp}
 return
 
 CapsLock & o::
-    if GetKeyState("control") = 0
-    {
-        if GetKeyState("alt") = 0
-            Send, {PgDn}
-        else
-            Send, +{PgDn}
-        return
-    }
-    else {
-        if GetKeyState("alt") = 0
-            Send, ^{PgDn}
-        else
-            Send, +^{PgDn}
-        return
-    }
+    if GetKeyState("shift") = 0
+        Send, {PgDn}
+    else
+        Send, +{PgDn}
 return
