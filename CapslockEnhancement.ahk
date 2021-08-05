@@ -24,64 +24,136 @@ return
 ; 方向键（Ctrl、Shift 兼容）
 CapsLock & j::
     if GetKeyState("control") = 0 {
-        if GetKeyState("shift") = 0
-            Send, {Left}
-        else
-            Send, +{Left}
+        if GetKeyState("shift") = 0 {
+            if GetKeyState("alt") = 0
+                Send, {Left}
+            else
+                Send, !{Left}
+            return
+        } else {
+            if GetKeyState("alt") = 0
+                Send, +{Left}
+            else
+                Send, +!{Left}
+            return
+        }
         return
     } else {
-        if GetKeyState("shift") = 0
-            Send, ^{Left}
-        else
-            Send, +^{Left}
+        if GetKeyState("shift") = 0 {
+            if GetKeyState("alt") = 0
+                Send, ^{Left}
+            else
+                Send, ^!{Left}
+            return
+        } else {
+            if GetKeyState("alt") = 0
+                Send, +^{Left}
+            else
+                Send, +^!{Left}
+            return
+        }
         return
     }
 return
 
 CapsLock & k::
     if GetKeyState("control") = 0 {
-        if GetKeyState("shift") = 0
-            Send, {Down}
-        else
-            Send, +{Down}
+        if GetKeyState("shift") = 0 {
+            if GetKeyState("alt") = 0
+                Send, {Down}
+            else
+                Send, !{Down}
+            return
+        } else {
+            if GetKeyState("alt") = 0
+                Send, +{Down}
+            else
+                Send, +!{Down}
+            return
+        }
         return
     } else {
-        if GetKeyState("shift") = 0
-            Send, ^{Down}
-        else
-            Send, +^{Down}
+        if GetKeyState("shift") = 0 {
+            if GetKeyState("alt") = 0
+                Send, ^{Down}
+            else
+                Send, ^!{Down}
+            return
+        } else {
+            if GetKeyState("alt") = 0
+                Send, +^{Down}
+            else
+                Send, +^!{Down}
+            return
+        }
         return
     }
 return
 
 CapsLock & i::
     if GetKeyState("control") = 0 {
-        if GetKeyState("shift") = 0
-            Send, {Up}  
-        else
-            Send, +{Up} 
+        if GetKeyState("shift") = 0 {
+            if GetKeyState("alt") = 0
+                Send, {Up}
+            else
+                Send, !{Up}
+            return
+        } else {
+            if GetKeyState("alt") = 0
+                Send, +{Up}
+            else
+                Send, +!{Up}
+            return
+        }
         return
     } else {
-        if GetKeyState("shift") = 0
-            Send, ^{Up} 
-        else
-            Send, +^{Up}
+        if GetKeyState("shift") = 0 {
+            if GetKeyState("alt") = 0
+                Send, ^{Up}
+            else
+                Send, ^!{Up}
+            return
+        } else {
+            if GetKeyState("alt") = 0
+                Send, +^{Up}
+            else
+                Send, +^!{Up}
+            return
+        }
         return
     }
 return
 
 CapsLock & l::
     if GetKeyState("control") = 0 {
-        if GetKeyState("shift") = 0
-            Send, {Right}
-        else
-            Send, +{Right}
+        if GetKeyState("shift") = 0 {
+            if GetKeyState("alt") = 0
+                Send, {Right}
+            else
+                Send, !{Right}
+            return
+        } else {
+            if GetKeyState("alt") = 0
+                Send, +{Right}
+            else
+                Send, +!{Right}
+            return
+        }
         return
     } else {
-        if GetKeyState("shift") = 0
-            Send, ^{Right}
-        else
-            Send, +^{Right}                           
+        if GetKeyState("shift") = 0 {
+            if GetKeyState("alt") = 0
+                Send, ^{Right}
+            else
+                Send, ^!{Right}
+            return
+        } else {
+            if GetKeyState("alt") = 0
+                Send, +^{Right}
+            else
+                Send, +^!{Right}
+            return
+        }
         return
     }
 return
