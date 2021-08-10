@@ -21,7 +21,7 @@ CapsLock & `::
     KeyWait, ``
 return
 
-; 方向键（Ctrl、Shift 兼容）
+; 方向键（Ctrl、Shift、alt 兼容）
 CapsLock & j::
     if GetKeyState("control") = 0 {
         if GetKeyState("shift") = 0 {
