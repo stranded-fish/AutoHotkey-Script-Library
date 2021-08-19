@@ -1,5 +1,5 @@
 /* 
-    浏览器（谷歌）白板编程增强
+    浏览器白板编程增强
     
     快捷键：
         Ctrl + d             | 删除当前行
@@ -7,8 +7,14 @@
         Ctrl + Shift + Enter | 在当前行上方插入空行，并移动光标
 */
 
-; 限定以下脚本只在 chrome 窗口运行
-#IfWinActive, ahk_exe chrome.exe
+; 定义浏览器组
+GroupAdd, Browsers, ahk_exe vivaldi.exe
+GroupAdd, Browsers, ahk_exe chrome.exe
+GroupAdd, Browsers, ahk_exe firefox.exe
+GroupAdd, Browsers, ahk_exe msedge.exe
+return
+
+#IfWinActive ahk_group Browsers
 
 ; 删除当前行
 ^d::
