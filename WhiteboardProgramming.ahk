@@ -18,7 +18,7 @@ return
 
 ; 删除当前行
 ^d::
-    SendInput,{End}+{home}+{home}{Delete}{Delete}
+    SendInput,{Home}{Home}{ShiftDown}{Down}{ShiftUp}{Del}
 return
 
 ; 在当前行下方插入空行，并移动光标
