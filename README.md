@@ -2,7 +2,10 @@
 
 AutoHotkey 是一种免费的、开源的 Windows 脚本语言，它允许用户轻松地为各种任务创建脚本或是自定义鼠标和键盘的快捷键。
 
-本项目提供了针对键盘大写锁定键 <kbd>CapsLock</kbd> 的快捷键映射以及针对浏览器编辑操作的 AutoHotkey 强化脚本。
+本项目提供了：
+
+* 针对键盘大写锁定键 <kbd>CapsLock</kbd> 的映射脚本 `CapslockEnhancement.ahk`
+* 针对浏览器编辑操作的强化脚本 `BrowserEditEnhancement.ahk`
 
 目录：
 
@@ -30,7 +33,7 @@ AutoHotkey 是一种免费的、开源的 Windows 脚本语言，它允许用户
 
 **Step 3.** 运行脚本
 
-双击 `CapslockEnhancement.ahk` 和 `WhiteboardProgramming.ahk` 即可启动脚本
+双击 `CapslockEnhancement.ahk` 和 `BrowserEditEnhancement.ahk` 即可启动脚本。
 
 脚本启动后会显示在系统托盘区，右击可对其进行暂停、重启、编辑等各种操作。
 
@@ -38,11 +41,11 @@ AutoHotkey 是一种免费的、开源的 Windows 脚本语言，它允许用户
 
 ### CapslockEnhancement.ahk
 
-在中文打字环境中，很少使用到大写锁定键，而在编程环境中，偶尔会用到的大写首字母等操作，又更加推荐按住 Shift 进行转换，故对于中文使用者而言 Capslock 键的整体使用频率偏低，但又非常容易误触 Capslock 键，最终影响工作效率。
+在中文打字环境中，很少使用到大写锁定键，而在编程环境中，偶尔会用到的大写首字母等操作，又更推荐按住 <kbd>Shift</kbd> 进行转换，故对于中文使用者而言 <kbd>Capslock</kbd> 键的整体使用频率偏低，但又非常容易误触，最终影响工作效率。
 
-为了避免误触，同时充分利用 Capslock 键优越的键盘位置，`CapslockEnhancement.ahk` 提供了以下功能：
+为了避免误触，同时充分利用 <kbd>Capslock</kbd> 键优越的键盘位置，`CapslockEnhancement.ahk` 提供了以下映射：
 
-|                                  按键                                         |                           功能                             |
+|                                  按键                                         |                           映射                             |
 |-------------------------------------------------------------------------------|-----------------------------------------------------------|
 |<kbd>CaspLock</kbd> + <kbd>`</kbd>                                              | <kbd>CapsLock</kbd>                                      |
 |<kbd>CaspLock</kbd> + <kbd>J</kbd> / <kbd>K</kbd> / <kbd>L</kbd> / <kbd>I</kbd> | <kbd>←</kbd> / <kbd>↓</kbd> / <kbd>→</kbd> / <kbd>↑</kbd>|
